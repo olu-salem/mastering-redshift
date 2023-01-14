@@ -8,7 +8,7 @@ CREATE DATABASE retail_db;
 
 DROP TABLE IF EXISTS orders;
 CREATE TABLE orders (
-  order_id INT,
+  order_id INT PRIMARY KEY,
   order_date DATE,
   order_customer_id INT,
   order_status VARCHAR(30)
