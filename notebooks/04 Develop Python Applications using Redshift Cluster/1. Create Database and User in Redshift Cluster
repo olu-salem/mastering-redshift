@@ -1,0 +1,13 @@
+# Since the DB already exists, you may ignore the Create db line
+CREATE DATABASE retail_db
+
+CREATE USER retail_user WITH PASSWORD <'Put_your_password_inside_the_quote'>
+
+GRANT ALL ON DATABASE retail_db TO retail_user
+
+# To Connect to the DB, we need the following details
+Host: <copy_your_endpoint_from_redshift_here>
+Port:5439
+Database:reatil_db
+User:retail_user
+Password: yourpassword
